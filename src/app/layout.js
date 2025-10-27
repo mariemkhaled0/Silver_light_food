@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       className={`${heliosExt.variable} ${theSignature.variable} ${Mencken_Std.variable}`}
     >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary`}
       >
         <div className="">{children}</div>
       </body>
