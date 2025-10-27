@@ -7,10 +7,10 @@ import reach from "@/assets/images/Reach.png";
 function GallerySection() {
   return (
     <section className="w-full">
-      <div className="w-full pt-[60px] h-44 text-center  text-black text-6xl font-bold font-mencken leading-[177px]">
+      <div className="w-full lg:pt-[60px]  lg:h-44 text-center  text-black lg:text-6xl md:text-4xl text-xl font-bold font-mencken lg:leading-[177px] mt-10">
         PARTNERS IN EVERY DISH
       </div>
-      <div className="text-center pb-20 justify-start mt-2 text-black text-xl font-normal font-helios uppercase leading-10 tracking-[2px]">
+      <div className="text-center pb-20 justify-start mt-2 text-black lg:text-xl md:text-sm text-[6px] font-normal font-helios uppercase lg:leading-10 tracking-[2px]">
         THAT MAKES AN IMPRESSION
       </div>
       <div className="flex gap-3 justify-center">
@@ -22,7 +22,7 @@ function GallerySection() {
             className=""
             alt="quality_image"
           />
-          <p className="inset-x-0  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white text-4xl font-bold z-50">
+          <p className="inset-x-0  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white lg:text-4xl text-base font-bold z-40">
             Quality
           </p>
         </div>
@@ -34,7 +34,7 @@ function GallerySection() {
             className="h-full"
             alt="quality_image"
           />
-          <p className="inset-x-0  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white text-4xl font-bold z-50">
+          <p className="inset-x-0  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white lg:text-4xl text-base font-bold z-40">
             Experience
           </p>
         </div>
@@ -46,7 +46,7 @@ function GallerySection() {
             className=""
             alt="quality_image"
           />
-          <p className="inset-x-0  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white text-4xl font-bold z-50">
+          <p className="inset-x-0  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white lg:text-4xl text-base font-bold z-40">
             Reach
           </p>
         </div>
