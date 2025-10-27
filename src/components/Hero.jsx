@@ -4,7 +4,7 @@ import underLine from "@/assets/images/underLine.png";
 
 export default function Hero() {
   return (
-    <section className="lg:px-20 px-6">
+    <section className="contanier">
       <h1 className="pt-[100px] text-4xl text-center justify-start text-black lg:text-[100px] md:text-6xl font-bold font-helios uppercase lg:leading-[100px] leading-10">
         SILVER LIGHT
         <br />
@@ -28,13 +28,13 @@ export default function Hero() {
           />
         </div>
       </div>
-      <p className="text-center text-[6px] lg:-mt-2 mt-4 justify-start text-black lg:text-lg md:text-base font-normal font-helios uppercase lg:leading-10 leading-[10px] tracking-wide lg:tracking-[2px]">
+      <p className="text-center text-[8px] lg:-mt-2 mt-4 justify-start text-black lg:text-lg md:text-base font-normal font-helios uppercase lg:leading-10 leading-[13px] tracking-wider lg:tracking-[2px]">
         Delivering quality, safety, and freshness
         <br />
         across Egypt.
       </p>
       <div>
-        <p className="text-sm  lg:h-28 h-16 pl-20 lg:pl-56 text-center text-black lg:text-4xl md:text-2xl font-normal font-signature leading-10">
+        <p className="text-lg  lg:h-28 h-16 pl-20 lg:pl-56 text-center text-black lg:text-4xl md:text-2xl font-normal font-signature leading-10">
           no stress
         </p>
       </div>

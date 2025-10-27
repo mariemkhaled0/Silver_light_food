@@ -26,11 +26,11 @@ function GallerySection() {
             Quality
           </p>
         </div>
-        <div className="relative mb-14 h-full w-[420px]">
+        <div className="relative mb-14 lg:h-[664px] w-[420px]">
           <Image
             src={exper}
             width={420}
-            height={600}
+            height={1000}
             className="h-full"
             alt="quality_image"
           />
@@ -50,6 +50,9 @@ function GallerySection() {
             Reach
           </p>
         </div>
+      </div>
+      <div className="text-center justify-start text-gray-600 lg:text-sm md:text-sm text-[10px] font-normal font-helios underline uppercase leading-10 tracking-[2.90px]">
+        Read Our Story
       </div>
     </section>
   );

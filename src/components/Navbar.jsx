@@ -13,7 +13,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="px-6 pt-3 lg:px-20 flex items-center justify-between relative z-50">
+    <header className="px-6 pt-3  lg:px-20 flex items-center justify-between relative z-50">
       {/* Logo */}
       <div>
         <Image src="/logo.png" alt="Logo" width={100} height={94} />
@@ -83,7 +83,7 @@ export default function Navbar() {
               Contact Us
             </li>
           </ul>
-          <li className="flex justify-end gap-5 pt-14 pe-10 pb-4">
+          <li className="flex justify-end gap-5  bottom-0 right-0 pt-32 pe-10 pb-4">
             <LinkedinIcon />
             <FacebookIcon />
             <InstagramIcon />
