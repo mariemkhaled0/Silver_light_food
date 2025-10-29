@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { heliosExt, theSignature, Mencken_Std } from "@/lib/fonts";
+import Footer from "@/components/Footer";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       >
         <div className="">{children}</div>
       </body>
+      <Footer />
     </html>
   );
 }

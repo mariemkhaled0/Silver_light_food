@@ -60,7 +60,7 @@ function HomeProducts() {
             width={288}
             alt="meat_image"
           />
-          <div className="absolute lg:-left-36 -left-10 md:-bottom-10 bottom-0">
+          <div className="absolute lg:-left-36 -left-20 md:-bottom-1 bottom-0">
             <MeatArrowIcon className="lg:w-20 lg:h-20 w-7 h-7  " />
             <div className=" text-center justify-start  text-black lg:text-7xl text-4xl font-normal font-signature leading-10">
               Meat
@@ -68,14 +68,12 @@ function HomeProducts() {
           </div>
         </div>
       </div>
-      <div className="flex gap-16 lg:gap-20 lg:px-20 pt-2">
+      <div className="flex gap-10 md:gap-20 lg:gap-20 lg:px-20 pt-2 md:pt-6">
         {/*offals*/}
-        <div className="lg:pt-10 pl-16">
+        <div className="lg:pt-10 pl-2 md:pl-20">
           <Image
             className="lg:w-[350px] lg:h-[350px] md:w-[230px] md:h-[230px]  w-24 h-24"
             src={liver}
-            height={288}
-            width={288}
             alt="liver_image"
           />
           <div className="flex lg:gap-5">
@@ -87,19 +85,19 @@ function HomeProducts() {
             </div>
           </div>
         </div>
-        <div className="lg:pt-20 flex">
+        <div className="lg:pt-20  flex">
           <Image
-            className="lg:w-80 lg:h-96 md:w-[230px] md:h-[230px]  w-24 h-32"
+            className="lg:w-80 lg:h-96 md:w-[230px] md:h-[230px]  w-24 h-24"
             src={salmon}
             height={288}
             width={288}
             alt="salmon_image"
           />
-          <div className=" gap-5 b-10">
-            <div className="lg:pl-4 pl-3">
+          <div className="">
+            <div className="lg:pl-4">
               <SalmonArrowIcon className="lg:w-20 lg:h-20 w-7 h-7 origin-top-left  " />
             </div>
-            <p className="w-20 h-6 lg:ml-20 ml-5 text-center justify-start text-black lg:text-7xl text-3xl font-normal font-signature leading-10">
+            <p className="w-20 h-6 lg:ml-20  text-center justify-start text-black lg:text-7xl text-3xl  font-normal font-signature leading-10">
               Salmon Food
             </p>
           </div>
