@@ -15,6 +15,14 @@ body {
 .contanier {
   @apply lg:px-20 px-6;
 }
+.p_text {
+  @apply text-black lg:text-xl md:text-lg text-sm  font-normal font-helios;
+}
+
+.section_padding {
+  @apply lg:pt-20 md:pt-10 pt-10;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
