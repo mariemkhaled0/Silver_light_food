@@ -1,25 +1,33 @@
 import React from "react";
 import AboutBackground from "@/assets/images/AboutBackground.png";
-import BigArrowDown from "@/assets/images/BigArrowDown.png";
+import ArrowDown from "@/assets/images/ArrowDown.png";
 import Image from "next/image";
+
 export default function OurMissionAndVision() {
   return (
     <section
-      className="bg-cover w-full bg-center h-screen pt-10  mt-20 px-40"
+      className="bg-cover w-full bg-center h-auto min-h-screen lg:pt-10 pt-5 mt-20 px-6 sm:px-10 md:px-20 lg:px-40"
       style={{ backgroundImage: `url(${AboutBackground.src})` }}
     >
-      <div>
-        <div className="flex justify-between w-full gap-20">
-          <div>
-            <p className=" justify-start text-teal-400 text-7xl font-bold font-helios leading-[90px]">
+      <div className="flex flex-col lg:gap-20 gap-10">
+        {/* Vision Section */}
+        <div className="flex flex-col md:flex-row justify-between w-full gap-10 md:gap-20 items-center md:items-start">
+          <div className="text-center md:text-left">
+            <p className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-helios leading-tight md:leading-[90px]">
               OUR
               <br />
               VISION
             </p>
-            <Image src={BigArrowDown} alt="arrow" className="w-auto h-auto " />
+            <div className="w-full flex justify-center md:justify-end mt-2">
+              <Image
+                src={ArrowDown}
+                alt="arrow"
+                className="w-28 lg:w-[200px] rotate-[10deg] h-auto bg-blend-darken"
+              />
+            </div>
           </div>
 
-          <p className="p_text text-end">
+          <p className="p_text text-center md:text-end text-sm  max-w-[600px]">
             Silverlight Foods Group aims to be the leading frozen food and meat
             importer in Egypt and the Middle East, offering premium halal
             products while ensuring quality, reliability, and food safety. By
@@ -28,6 +36,27 @@ export default function OurMissionAndVision() {
             the frozen food supply chain efficient, transparent, and
             customer-focused.
           </p>
+        </div>
+
+        {/* Mission Section */}
+        <div className="flex flex-col-reverse md:flex-row justify-between w-full gap-10 md:gap-10 items-center md:items-start pt-2">
+          <p className="p_text text-center md:text-start text-sm  max-w-[600px]">
+            Silverlight Foods Group aims to be the leading frozen food and meat
+            importer in Egypt and the Middle East, offering premium halal
+            products while ensuring quality, reliability, and food safety. By
+            connecting global suppliers with the Egyptian market and investing
+            in innovation and modern cold-chain logistics, they strive to make
+            the frozen food supply chain efficient, transparent, and
+            customer-focused.
+          </p>
+
+          <div className="text-center md:text-right lg:text-left">
+            <p className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-helios leading-tight md:leading-[90px]">
+              OUR
+              <br />
+              Mission
+            </p>
+          </div>
         </div>
       </div>
     </section>

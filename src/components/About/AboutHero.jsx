@@ -22,7 +22,7 @@ function AboutHero() {
         </p>
       </div>
       <div>
-        <p className="p_text text-center w-full lg:px-40 md:px-20 px-10 pt-20">
+        <p className="p_text text-center w-full lg:px-40 md:px-20 px-10 pt-10">
           Silverlight Foods Group, established in <strong>1990</strong>, is a
           leading frozen food and frozen meat importer in Egypt. With more than
           three decades of experience, the company has built strong partnerships
