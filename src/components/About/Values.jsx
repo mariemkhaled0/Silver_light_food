@@ -3,12 +3,12 @@ import React from "react";
 import manyArrowsImg from "@/assets/images/manyArrowsImg.png";
 function Values() {
   return (
-    <section className="lg:pt-20 md:pt-2 pt-10 md:max-w-[700px] sm:max-w-[700px] lg:max-w-full mx-auto">
+    <section className="xl:pt-20 lg:pt-10 md:pt-2 pt-10 md:max-w-[700px] sm:max-w-[700px] lg:max-w-full mx-auto">
       <div className="text-center ">
         <p className="text-teal-400 uppercase text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-bold font-helios leading-tight md:leading-[90px]">
           OUR Values
         </p>
-        <div className="flex justify-center lg:mt-20 md:pt-2 pt-7 items-center">
+        <div className="flex justify-center xl:mt-20 lg:pt-7 md:pt-2 pt-7 items-center">
           <div className="  flex flex-col gap-10">
             <div className="lg:w-96 md:w-[150px] w-[100px]  lg:pl-10  text-end">
               <p class="text-black md:text-[12px] lg:text-lg text-[8px] font-bold font-helios">
