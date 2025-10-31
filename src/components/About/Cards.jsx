@@ -17,7 +17,7 @@ const Card = ({ imgSrc, title, number, desc, firstName, lastName }) => {
             />
           ) : (
             // Invisible placeholder box to keep layout consistent
-            <div className="lg:w-[250px] w-[100px] lg:h-[260px] md:h-[200px] h-[165px] bg-transparent" />
+            <div className="lg:w-[250px] w-[100px] lg:h-[260px] md:h-[200px] h-[188px] bg-transparent" />
           )}
         </div>
 

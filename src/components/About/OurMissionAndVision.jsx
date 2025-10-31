@@ -6,14 +6,14 @@ import Image from "next/image";
 export default function OurMissionAndVision() {
   return (
     <section
-      className="bg-cover w-full bg-center h-auto min-h-screen lg:pt-10 pt-5 mt-20 px-6 sm:px-10 md:px-20 lg:px-40"
+      className="bg-cover w-full bg-center h-auto min-h-screen lg:pt-10 pt-5 lg:mt-20 md:mt-10 mt-6 px-6 sm:px-10 md:px-20 lg:px-40"
       style={{ backgroundImage: `url(${AboutBackground.src})` }}
     >
       <div className="flex flex-col lg:gap-20 gap-10">
         {/* Vision Section */}
         <div className="flex flex-col md:flex-row justify-between w-full gap-10 md:gap-20 items-center md:items-start">
           <div className="text-center md:text-left">
-            <p className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-helios leading-tight md:leading-[90px]">
+            <p className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-helios uppercase leading-tight md:leading-[90px]">
               OUR
               <br />
               VISION
@@ -51,7 +51,7 @@ export default function OurMissionAndVision() {
           </p>
 
           <div className="text-center md:text-right lg:text-left">
-            <p className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-helios leading-tight md:leading-[90px]">
+            <p className="text-teal-400 text-4xl sm:text-5xl uppercase md:text-6xl lg:text-7xl font-bold font-helios leading-tight md:leading-[90px]">
               OUR
               <br />
               Mission

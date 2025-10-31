@@ -17,7 +17,7 @@ function AboutHero() {
           Quality That Build
           <br />
         </p>
-        <p class="text-teal-400 text-end w-full lg:pr-20 pr-10 md:pr-20 font-mencken lg:text-[100px] md:text-6xl text-3xl font-bold ">
+        <p class="text-teal-400 text-end w-full lg:pr-20 pr-6 md:pr-20 font-mencken lg:text-[100px] md:text-6xl text-4xl font-bold uppercase">
           Trust
         </p>
       </div>

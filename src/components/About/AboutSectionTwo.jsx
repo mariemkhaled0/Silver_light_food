@@ -6,7 +6,7 @@ function AboutSectionTwo() {
   return (
     <section className="pt-10 lg:pt-0 ">
       <div className="flex items-center">
-        <p className="text-xl lg:pl-20  pl-10 w-full z-0 relative   text-black lg:text-3xl md:text-3xl font-bold font-helios uppercase">
+        <p className="text-xl lg:pl-20  pl-10 w-full z-0 relative   text-black lg:text-4xl md:text-3xl font-bold font-helios uppercase">
           the finest quality meats to meet the standards of hotels and high end
           restaurants
         </p>
