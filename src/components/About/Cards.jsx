@@ -51,7 +51,7 @@ const Card = ({ imgSrc, title, number, desc, firstName, lastName }) => {
 function Cards() {
   return (
     <section className="contanier">
-      <p className=" lg:py-20 md:py-10 py-5 text-center text-black lg:text-5xl md:text-2xl text-xl font-bold font-helios leading-[120px]">
+      <p className=" lg:py-20 md:py-10 py-5 text-center text-black lg:text-5xl md:text-3xl text-xl font-bold font-helios leading-[120px]">
         FROM VISION TO REALITY
       </p>
       <div className="flex flex-col gap-10 w-full">
@@ -72,26 +72,6 @@ function Cards() {
             lastName={" Romany Ramzy "}
           />
         </div>
-        {/* <div className="flex lg:justify-start md:justify-start w-full">
-          <Card
-            imgSrc={Kareem}
-            title={"COO"}
-            number={"+201223636571"}
-            desc={"karim.naem@silverlight-group.net"}
-            firstName={"Karim"}
-            lastName={" Naem Ramzy "}
-          />
-        </div>
-        <div className="flex lg:justify-end md:justify-end w-full">
-          <Card
-            imgSrc={Kareem}
-            title={"cso"}
-            number={"+201210373665"}
-            desc={"Mina.beshoy@silverlight-group.net"}
-            firstName={"Mina"}
-            lastName={" Alexan Beshoy "}
-          />
-        </div> */}
       </div>
     </section>
   );
