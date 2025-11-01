@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="border-t border-black text-center mt-20 md:mt-40 px-4 md:px-8 lg:px-16">
-      <p className="pt-8 pb-2 opacity-60 text-black text-[10px] sm:text-xs md:text-sm font-helios uppercase tracking-[2px] md:tracking-[2.8px]">
+    <footer className="border-t border-black text-center px-4 md:px-8 lg:px-16">
+      <p className="pt-10 pb-2 opacity-60 text-black text-[10px] sm:text-xs md:text-sm font-helios uppercase tracking-[2px] md:tracking-[2.8px]">
         SILVER LIGHT FOOD GROUP
       </p>
 

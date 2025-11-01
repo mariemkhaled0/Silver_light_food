@@ -97,7 +97,7 @@ function HomeProducts() {
             <div className="lg:pl-4">
               <SalmonArrowIcon className="lg:w-20 lg:h-20 w-7 h-7 origin-top-left  " />
             </div>
-            <p className="w-20 h-6 lg:ml-20  text-center justify-start text-black lg:text-7xl text-3xl  font-normal font-signature leading-10">
+            <p className="w-20 h-6 xl:ml-20 lg:ml-1  text-center justify-start text-black lg:text-7xl text-3xl  font-normal font-signature leading-10">
               Salmon Food
             </p>
           </div>

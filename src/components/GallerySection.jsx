@@ -26,7 +26,7 @@ function GallerySection() {
             Quality
           </p>
         </div>
-        <div className="relative mb-14 lg:h-[664px] w-[420px]">
+        <div className="relative mb-14 xl:h-[664px] lg-h-auto w-[420px]">
           <Image
             src={exper}
             width={420}

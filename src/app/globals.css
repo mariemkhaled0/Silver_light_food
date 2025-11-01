@@ -28,3 +28,6 @@ body {
     text-wrap: balance;
   }
 }
+.p-bottom {
+  @apply pb-20 md:pb-40;
+}

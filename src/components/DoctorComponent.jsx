@@ -6,7 +6,7 @@ import CustomButton from "./CustomButton";
 
 function DoctorComponent() {
   return (
-    <section className="lg:pt-32 pt-20">
+    <section className="lg:pt-32 pt-20  pb-20 md:pb-40">
       <div className="bg-black w-full lg:h-[423px] h-auto flex  text-white">
         <div className="lg:w-2/5 w-1/2">
           <Image

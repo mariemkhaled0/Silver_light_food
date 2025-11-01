@@ -50,7 +50,7 @@ const Card = ({ imgSrc, title, number, desc, firstName, lastName }) => {
 };
 function Cards() {
   return (
-    <section className="contanier">
+    <section className="contanier  p-bottom">
       <p className=" lg:py-20 md:py-10 py-5 text-center text-black lg:text-5xl md:text-3xl text-xl font-bold font-helios leading-[120px]">
         FROM VISION TO REALITY
       </p>

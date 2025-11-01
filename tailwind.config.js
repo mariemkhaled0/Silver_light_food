@@ -15,6 +15,10 @@ module.exports = {
         signature: ["var(--font-thesignature)", "cursive"],
         mencken: ["var(--font-mencken_Std)"],
       },
+      screens: {
+        xxs: { min: "320px", max: "350px" },
+        xs: { min: "375px", max: "390px" },
+      },
     },
   },
   plugins: [],
