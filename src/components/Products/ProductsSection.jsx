@@ -1,11 +1,21 @@
 import React from "react";
-
 import Image from "next/image";
-import CustomButton from "../CustomButton";
 import Link from "next/link";
 import Navbar from "../Navbar";
+import CustomButton from "../CustomButton";
 
-function ProductsSection({
+const DetailRow = ({ title, description }) => (
+  <div className="pt-3 flex items-center justify-between border-b-[1.5px] border-black pb-5  lg:gap-5 md:gap-5 lg:pb-7 xxs:pb-2 gap-2">
+    <h3 className="font-helios font-bold lg:text-5xl md:text-4xl text-2xl xxs:text-[16px] xs:text-[18px]">
+      {title}
+    </h3>
+    <p className="font-helios font-normal text-black lg:text-base md:text-base xxs:text-[10px] xs:text-[11px] lg:max-w-[240px] max-w-[180px]">
+      {description}
+    </p>
+  </div>
+);
+
+export default function ProductsSection({
   imgClassName,
   bgImg,
   title,
@@ -21,77 +31,65 @@ function ProductsSection({
 }) {
   return (
     <section
-      className="w-full h-full bg-cover bg-center bg-no-repeat "
-      style={{
-        backgroundImage: `url(${bgImg.src})`,
-      }}
+      className="w-full h-full bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <Navbar className="absolute top-4" />
-      {/* Container for text + overlay image */}
-      <div className="pt-40 lg:px-20 md:px-10 px-6 relative pb-10">
+
+      <div className="relative pt-40 pb-10 px-6 md:px-10 lg:px-20">
+        {/* Title + Product Image */}
         <div className="relative text-center">
           <p className={titleClassName}>
             {title.part1}
             <br />
             {title.part2}
           </p>
-          <Image src={productImg} alt="product_img" className={imgClassName} />
+          <Image src={productImg} alt="product image" className={imgClassName} />
         </div>
-        <div className="lg:pt-10 pt-14 flex items-center h-full flex-wrap gap-6 lg:gap-0 justify-between">
-          <div className="">
-            <h3 className="uppercase font-helios font-bold lg:text-6xl  text-4xl">
+
+        {/* Content Section */}
+        <div className="flex flex-wrap items-center justify-between gap-6 lg:gap-0 pt-16 lg:pt-10">
+          {/* Left Text */}
+          <div>
+            <h3 className="uppercase font-helios font-bold lg:text-6xl text-4xl">
               {title.part1}
               <br />
               {title.part2}
             </h3>
-            <p className="max-w-[400px] text-black text-lg  font-normal font-helios  mt-4">
+            <p className="font-helios font-normal text-lg text-black mt-4 max-w-[400px]">
               {leftContent}
             </p>
-            <CustomButton className={"mt-10"} />
+            <CustomButton className="mt-10" />
           </div>
-          <div className="flex justify-end md:justify-end  lg:justify-end xl:justify-start md:w-full lg:w-full xl:w-auto max-h-[550px]">
-            <div className="max-w-[500px]  border-[10px] p-10 border-black">
-              <p className="border-b-[1.5px] lg:pb-7 pb-5 font-helios text-sm lg:text-base border-black">
-                <strong> Product Details </strong>
+
+          {/* Product Details Card */}
+          <div className="flex justify-end xl:justify-start xl:mt-20 md:w-full lg:w-full xl:w-auto max-h-[590px]">
+            <div className="max-w-[500px] border-[10px] border-black p-10">
+              <p className="font-helios text-sm lg:text-base md:text-base xxs:text-[12px] xs:text-[14px] border-b-[1.5px] border-black pb-5 lg:pb-7">
+                <strong>Product Details</strong>
                 <br />
                 {productDetails}
               </p>
 
-              <div className="pt-3 flex items-center justify-between border-b-[1.5px] lg:pb-7 pb-5 border-black">
-                <h3 className="lg:text-5xl text-2xl font-bold font-helios ">
-                  {temperature}
-                </h3>
-                <p className="lg:max-w-[240px] max-w-[180px] text-black  text-xs lg:text-base font-normal font-helios">
-                  {temperatureDesc}
-                </p>
-              </div>
-              <div className="pt-3 flex items-center gap-5 justify-between border-b-[1.5px] pb-7 border-black">
-                <h3 className="lg:text-5xl text-2xl  font-bold font-helios uppercase ">
-                  {packagingType}
-                </h3>
-                <p className="lg:max-w-[240px] max-w-[180px] text-black  text-xs lg:text-base font-normal font-helios">
-                  {packagingDesc}
-                </p>
-              </div>
-              <p className=" lg:py-7 py-5 text-sm lg:text-base ">
-                <strong> Industries served </strong>
+              <DetailRow title={temperature} description={temperatureDesc} />
+              <DetailRow title={packagingType} description={packagingDesc} />
+
+              <p className="font-helios text-sm lg:text-base md:text-base xxs:text-[12px] xs:text-[14px] border-black lg:py-7 py-5">
+                <strong>Industries Served</strong>
                 <br />
                 {industries}
               </p>
             </div>
           </div>
         </div>
-        <div className=" lg:justify-start md:justify-center justify-center md:pt-10 pt-6 lg:pt-0 text-sm lg:text-base flex items-end font-normal font-helios underline uppercase leading-10 tracking-[4px]">
-          <Link
-            className="hover:text-gray-800 text-gray-600 "
-            href={"/products"}
-          >
-            back to Products
+
+        {/* Back Link */}
+        <div className="flex justify-center md:justify-center lg:justify-start items-end pt-6 md:pt-10 lg:pt-0 font-helios text-sm lg:text-base font-normal underline uppercase leading-10 tracking-[4px]">
+          <Link href="/products" className="text-gray-600 hover:text-gray-800">
+            Back to Products
           </Link>
         </div>
       </div>
     </section>
   );
 }
-
-export default ProductsSection;
