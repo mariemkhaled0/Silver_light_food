@@ -8,7 +8,7 @@ function SectionThree() {
         <br /> Network
       </h1>
 
-      <p className="max-w-[80ch] text-center text-xs md:text-sm lg:text-base w-full mx-auto pt-2 px-10 font-helios relative z-50">
+      <p className="max-w-[80ch] text-center text-xs md:text-sm lg:text-base w-full mx-auto lg:pt-2 py-5 px-10 font-helios relative z-50">
         At Silverlight Foods Group, we are proud of our strong and growing
         presence across Egypt. With strategic branches and distribution hubs
         in Cairo, Obour, Luxor, South Sinai (Sharm El-Sheikh), and the Red Sea
