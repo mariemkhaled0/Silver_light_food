@@ -1,11 +1,11 @@
 import ProductsSection from "@/components/Products/ProductsSection";
 import butterProduct from "@/assets/images/butterProduct.png";
-import chickenBg from "@/assets/images/chickenBg.png";
+import butterBg from "@/assets/images/ButterBg.jpg";
 function page() {
   return (
     <>
       <ProductsSection
-        bgImg={chickenBg}
+        bgImg={butterBg}
         imgClassName={
           "absolute top-1/2 left-1/2 -translate-x-1/2 xl:mt-28 lg:mt-14 md:mt-10 mt-6 -translate-y-1/2 xl:w-[550px] lg:w-[370px] md:w-[300px] w-[200px] h-auto"
         }
