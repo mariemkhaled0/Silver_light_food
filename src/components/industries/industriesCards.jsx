@@ -10,13 +10,17 @@ const Card = ({ img, title, desc, className }) => {
   return (
     <div className={`flex w-full justify-between items-center ${className}`}>
       <div className="relative">
-        <Image src={img} alt="industry_image" className="w-[600px] h-auto" />
-        <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold lg:text-5xl md:text-xl text-lg xxs:text-[12px] uppercase font-helios">
+        <Image
+          src={img}
+          alt="industry_image"
+          className="lg:w-[600px]  md:w-[500px] w-[500px]  h-auto"
+        />
+        <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold xl:text-5xl lg:text-3xl md:text-xl text-lg xxs:text-[12px] uppercase font-helios">
           {title}
         </h2>
       </div>
-      <div className="lg:px-20 md:px-6 px-4">
-        <p className="max-w-[550px] lg:text-base text-[8px]  font-helios">
+      <div className="lg:px-20 md:px-6 px-3">
+        <p className="max-w-prose lg:text-base text-[9px]  font-helios">
           {desc}
         </p>
         <CustomButton className={"mt-10"} title={"Become Our Partner"} />
