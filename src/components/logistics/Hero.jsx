@@ -22,7 +22,7 @@ function Hero() {
       <Navbar isWhiteLogo={true} className="absolute top-4 text-white z-50" />
 
       {/* Content */}
-      <div className="text-white absolute top-1/2 lg:left-20 left-6 -translate-y-1/2 z-50 space-y-6">
+      <div className="text-white absolute top-1/2 lg:left-20 left-6 -translate-y-1/2 z-40 space-y-6">
         <h1 className="lg:text-9xl md:text-7xl text-5xl font-extrabold font-mencken uppercase">
           Logistics
           <br /> & Facilities

@@ -29,7 +29,7 @@ export default function Navbar({ className, isWhiteLogo = false }) {
   return (
     <header className={` w-full ${className}`}>
       <div
-        className={`px-6 pt-3 lg:px-20 w-full flex items-center justify-between relative z-50 `}
+        className={`px-6 pt-3 lg:px-20 w-full flex items-center justify-between relative z-[999] `}
       >
         {/* Logo */}
         <div>
