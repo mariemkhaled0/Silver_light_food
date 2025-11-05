@@ -12,7 +12,7 @@ export default function IndustriesHero() {
     >
       <Navbar className="absolute top-4" />
       <div className=" pt-40 ">
-        <p className=" w-full text-center px-4 text-black xl:text-[120px] lg:text-7xl md:text-6xl text-[34px] xs:text-3xl xxs:text-2xl  font-extrabold font-mencken uppercase ">
+        <p className=" w-full text-center px-2 text-black xl:text-[120px] lg:text-7xl md:text-6xl text-[34px] xs:text-3xl xxs:text-2xl  font-extrabold font-mencken uppercase ">
           Industries We Serve
         </p>
         <div className="flex flex-wrap w-full justify-between">
