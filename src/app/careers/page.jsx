@@ -1,8 +1,8 @@
 import Hero from "@/components/careers/Hero";
 import Navbar from "@/components/Navbar";
 import React from "react";
-import WhyWorkAtSLF from "./WhyWorkAtSLF";
-import TrainingAndDevelopment from "./TrainingAndDevelopment";
+import WhyWorkAtSLF from "../../components/careers/WhyWorkAtSLF";
+import TrainingAndDevelopment from "../../components/careers/TrainingAndDevelopment";
 import CustomButton from "@/components/CustomButton";
 
 function page() {
