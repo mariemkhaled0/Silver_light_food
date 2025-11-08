@@ -27,9 +27,9 @@ export default function Navbar({ className, isWhiteLogo = false }) {
   ];
 
   return (
-    <header className={` w-full ${className}`}>
+    <header className={`nav w-full ${className}`}>
       <div
-        className={`px-6 pt-3 lg:px-20 w-full flex items-center justify-between relative z-[999] `}
+        className={`px-6 pt-3 lg:px-20 w-full flex items-center justify-between relative  `}
       >
         {/* Logo */}
         <div>
@@ -92,7 +92,7 @@ export default function Navbar({ className, isWhiteLogo = false }) {
           </button>
 
           {/* Links */}
-          <div className="max-h-[100vh] overflow-y-auto">
+          <div className="max-h-[100vh] overflow-y-auto ">
             <ul className="space-y-6 pe-10 pt-20 text-[15px] md:text-2xl font-helios">
               {navLinks.map((link) => (
                 <li
