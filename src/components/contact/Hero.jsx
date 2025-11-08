@@ -17,14 +17,14 @@ export default function Hero() {
       />
 
       {/* Gradient overlay */}
-      
+
       <div className="absolute inset-0 z-20  bg-black/40 " />
 
       {/* Navbar */}
-      <Navbar isWhiteLogo={true} className="absolute top-4 text-white z-40" />
+      <Navbar isWhiteLogo={true} className="absolute top-4 text-white " />
 
       {/* Content */}
-      <div className="text-white absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 z-40 w-full">
+      <div className="text-white absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 z-30 w-full">
         <h1 className="lg:text-8xl md:text-7xl text-5xl w-full font-extrabold font-mencken uppercase text-center">
           Contact us
         </h1>
