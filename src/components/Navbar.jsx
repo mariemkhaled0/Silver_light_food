@@ -29,7 +29,7 @@ export default function Navbar({ className, isWhiteLogo = false }) {
   return (
     <header className={`nav w-full ${className}`}>
       <div
-        className={`px-6 pt-3 lg:px-20 w-full flex items-center justify-between relative nav  `}
+        className={`px-6 pt-3 lg:px-20 w-full flex items-center justify-between relative z-50  `}
       >
         {/* Logo */}
         <div>
@@ -79,7 +79,7 @@ export default function Navbar({ className, isWhiteLogo = false }) {
 
         {/* Mobile Sidebar */}
         <div
-          className={`fixed inset-0 text-black z-50 bg-primary flex flex-col pt-5 text-end transition-transform duration-500 ${
+          className={`fixed inset-0 text-black  bg-primary flex flex-col pt-5 text-end transition-transform duration-500 ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
