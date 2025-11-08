@@ -19,10 +19,10 @@ function Hero() {
       <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/40 via-transparent to-primary" />
 
       {/* Navbar */}
-      <Navbar isWhiteLogo={true} className="absolute top-4 text-white z-50" />
+      <Navbar isWhiteLogo={true} className="absolute top-4 text-white " />
 
       {/* Content */}
-      <div className="text-white absolute top-1/2 lg:left-20 left-6 -translate-y-1/2 z-40 space-y-6">
+      <div className="text-white absolute top-1/2 lg:left-20 left-6 -translate-y-1/2 z-30 space-y-6">
         <h1 className="lg:text-9xl md:text-7xl text-5xl font-extrabold font-mencken uppercase">
           Logistics
           <br /> & Facilities
