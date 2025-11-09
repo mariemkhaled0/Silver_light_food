@@ -3,12 +3,12 @@ import React from "react";
 function SectionThree() {
   return (
     <section className="container text-center w-full mx-auto pt-20 p-bottom">
-      <h1 className="font-bold font-helios lg:text-6xl md:text-5xl text-2xl lg:leading-[90px] z-50 relative">
+      <h1 className="font-bold font-helios lg:text-6xl md:text-5xl text-2xl lg:leading-[90px] z-30 relative">
         Nationwide Logistics
         <br /> Network
       </h1>
 
-      <p className="max-w-[80ch] text-center text-xs md:text-sm lg:text-base w-full mx-auto lg:pt-2 py-5 px-10 font-helios relative z-50">
+      <p className="max-w-[80ch] text-center text-xs md:text-sm lg:text-base w-full mx-auto lg:pt-2 py-5 px-10 font-helios relative z-30">
         At Silverlight Foods Group, we are proud of our strong and growing
         presence across Egypt. With strategic branches and distribution hubs
         in Cairo, Obour, Luxor, South Sinai (Sharm El-Sheikh), and the Red Sea

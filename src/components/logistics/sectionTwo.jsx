@@ -2,13 +2,13 @@ import React from "react";
 
 export default function IndustriesSectionTwo() {
   return (
-    <section className="container text-center w-full mx-auto lg:pt-20 -mt-24 z-50 px-4">
-      <h1 className="font-bold font-helios lg:text-6xl md:text-5xl text-2xl lg:leading-[90px] z-50 relative">
+    <section className="container text-center w-full mx-auto lg:pt-20 -mt-24 z-30 px-4">
+      <h1 className="font-bold font-helios lg:text-6xl md:text-5xl text-2xl lg:leading-[90px] z-30 relative">
         Advanced Warehousing
         <br /> Facilities
       </h1>
 
-      <p className="max-w-[80ch] text-center text-xs md:text-sm lg:text-base w-full mx-auto pt-2 font-helios relative z-50 px-6">
+      <p className="max-w-[80ch] text-center text-xs md:text-sm lg:text-base w-full mx-auto pt-2 font-helios relative z-30 px-6">
         Our state-of-the-art warehouses provide 8,000 tons of storage capacity,
         ensuring top cold-chain standards. Equipped with advanced refrigeration
         systems, they preserve the quality, taste, and nutritional value of our
