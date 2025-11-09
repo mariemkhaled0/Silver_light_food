@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar";
-import bgImg from "@/assets/images/industries.png";
+import bgImg from "@/assets/images/industBg.png";
 import CustomButton from "../CustomButton";
 import salmonIndustries from "@/assets/images/salmonIndustries.png";
 import Image from "next/image";
 export default function IndustriesHero() {
   return (
     <section
-      className="w-full h-full bg-cover bg-center bg-no-repeat "
+      className="w-full h-full bg-cover bg-center bg-no-repeat  pb-20"
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <Navbar className="absolute top-4" />
@@ -26,14 +26,14 @@ export default function IndustriesHero() {
             </p>
             <CustomButton title={"Become Our Partner"} className={"mt-10"} />
           </div>
-          <div className="w-full flex justify-end -mt-10 md:-mt-40 lg:-mt-80">
+          {/* <div className="w-full flex justify-end -mt-10 md:-mt-40 lg:-mt-80">
             <Image
               src={salmonIndustries}
               alt="industries_image"
               className="lg:max-w-[500px] xl:max-w-[600px] md:w-[400px] w-[270px] xxs:w-[200px] xs:w-[250px]
           h-auto"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

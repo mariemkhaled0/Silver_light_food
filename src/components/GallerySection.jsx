@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import quality from "@/assets/images/Quality.png";
-import exper from "@/assets/images/Experience.png";
+import exper from "@/assets/images/experience.jpg";
 import reach from "@/assets/images/Reach.png";
 
 function GallerySection() {
@@ -26,7 +26,7 @@ function GallerySection() {
             Quality
           </p>
         </div>
-        <div className="relative mb-14 xl:h-[664px] lg-h-auto w-[420px]">
+        <div className="relative mb-14 xl:h-[674px] lg-h-auto w-[420px]">
           <Image
             src={exper}
             width={420}

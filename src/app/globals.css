@@ -35,3 +35,33 @@ body {
 .nav {
   z-index: 999 !important;
 }
+/* Scrollbar for horizontal scroll */
+.scrollable-container {
+  overflow-x: auto;
+  scroll-behavior: smooth; /* optional */
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.scrollable-container::-webkit-scrollbar {
+  height: 8px; /* horizontal scrollbar height */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: transparent; /* transparent track */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: rgb(168, 168, 168); /* primary thumb color */
+  border-radius: 10px;
+  border: 2px solid transparent; /* optional spacing */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(168, 168, 168); /* darker on hover */
+}
+
+/* Firefox */
+.scrollable-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(168, 168, 168) transparent; /* thumb color, transparent track */
+}
