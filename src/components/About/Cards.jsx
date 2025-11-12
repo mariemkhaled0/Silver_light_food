@@ -24,7 +24,7 @@ const Card = ({ imgSrc, title, className, number, desc, email }) => {
         </div>
         <div className={`flex ${className}`}>
           <div className="flex items-end">
-            <CircleIcon className={"md:w-[60px] lg:w-[70px] w-[40px]"} />
+            <CircleIcon className={"md:w-[60px] lg:w-[71px] w-[40px]"} />
           </div>
           <div>
             <Image
