@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import mrRomany from "@/assets/images/mrRomany.png";
-import mrBeshoy from "@/assets/images/mrBeshoy.png";
+
 import { CircleIcon } from "@/assets/Icons";
 
 const Card = ({ imgSrc, title, className, number, desc, email }) => {
@@ -63,7 +63,7 @@ We remain dedicated to excellence, sustainability, and food safety, ensuring Sil
         />
         <div className="flex lg:justify-end md:justify-end w-full">
           <Card
-            imgSrc={mrBeshoy}
+            imgSrc={mrRomany}
             className={"flex-row-reverse"}
             title={"CEO"}
             number={"+201270585858"}
