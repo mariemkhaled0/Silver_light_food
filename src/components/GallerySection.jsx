@@ -3,6 +3,7 @@ import React from "react";
 import quality from "@/assets/images/Quality.png";
 import exper from "@/assets/images/experience.jpg";
 import reach from "@/assets/images/Reach.png";
+import Link from "next/link";
 
 function GallerySection() {
   return (
@@ -34,7 +35,7 @@ function GallerySection() {
             className="h-full"
             alt="quality_image"
           />
-          <p className="inset-x-0  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white lg:text-4xl text-base font-bold z-40">
+          <p className="inset-x-0 xxs:text-xs xs:text-sm  absolute font-helios uppercase bottom-3 text-center flex items-center justify-center text-white lg:text-4xl text-base font-bold z-40">
             Experience
           </p>
         </div>
@@ -52,7 +53,7 @@ function GallerySection() {
         </div>
       </div>
       <div className="text-center justify-start text-gray-600 lg:text-sm md:text-sm text-[10px] font-normal font-helios underline uppercase leading-10 tracking-[2.90px]">
-        Read Our Story
+        <Link href={"/about"}> Read Our Story</Link>
       </div>
     </section>
   );

@@ -9,10 +9,10 @@ function page() {
     <>
       <ProductsSection
         imgClassName={
-          "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[500px] md:w-[400px] w-[250px] h-auto"
+          "absolute xxs:-right-30 lg:top-80 md:top-20 top-24 lg:-right-96 md:-right-36 -right-28 lg:w-[560px] md:w-[450px] w-[300px] h-auto "
         }
         titleClassName={
-          "text-black lg:text-9xl md:text-9xl text-7xl font-bold font-helios text-center uppercase"
+          "text-black text-left pl-6 lg:pl-0 md:pl-6 lg:text-[180px] md:text-9xl text-7xl font-bold font-helios xl:text-center uppercase"
         }
         bgImg={meatBg}
         title={{ part1: "Frozen", part2: "Meat" }}

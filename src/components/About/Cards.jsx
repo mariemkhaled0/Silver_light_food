@@ -1,49 +1,44 @@
 import Image from "next/image";
 import React from "react";
-import mrRomany from "@/assets/images/mrRomany.png";
-import Kareem from "@/assets/images/Kareem.png";
+import mrRomany from "@/assets/images/MrRomany.png";
+import mrBeshoy from "@/assets/images/MrBeshoy.png";
+import { CircleIcon } from "@/assets/Icons";
 
-const Card = ({ imgSrc, title, number, desc, firstName, lastName }) => {
+const Card = ({ imgSrc, title, className, number, desc, email }) => {
   return (
-    <div className="bg-black relative max-w-[600px] max-h-[289px] w-full">
-      <div className="flex lg:gap-5 md:gap-4 gap-2 items-start">
-        {/* Image or Placeholder */}
-        <div className="w-auto h-auto flex items-center justify-center bg-transparent">
-          {imgSrc ? (
-            <Image
-              src={imgSrc}
-              alt="person_image"
-              className="lg:w-auto md:w-auto w-[170px] h-auto "
-            />
-          ) : (
-            // Invisible placeholder box to keep layout consistent
-            <div className="lg:w-[250px] w-[100px] lg:h-[260px] md:h-[289px] h-[188px] bg-transparent" />
-          )}
-        </div>
-
-        {/* Text content */}
-        <div className="lg:pt-6 md:pt-5 pt-2">
-          <h3 className="text-white md:text-xl lg:text-xl text-base max-[350px]:text-sm font-bold font-helios uppercase">
+    <div className="text-black relative  w-full">
+      <div
+        className={`flex justify-between gap-10 flex-wrap md:flex-nowrap lg:flex-nowrap items-center ${className}`}
+      >
+        <div className="">
+          <h3 className="font-signature lg:text-6xl md:text-6xl text-4xl py-4">
             {title}
+            <br />
+            Message
           </h3>
-          <div className="lg:pt-5 pt-3 text-xs md:text-base lg:text-sm max-[350px]:text-[10px]">
-            <p className="text-white font-helios font-normal">{number}</p>
-            <p className="text-white font-helios font-normal">{desc}</p>
+          <div>
+            <p className="max-w-prose lg:text-base md:text-base text-sm">
+              {desc}
+            </p>
           </div>
         </div>
-      </div>
+        <div className={`flex ${className}`}>
+          <div className="flex items-end">
+            <CircleIcon className={"md:w-[60px] lg:w-[70px] w-[40px]"} />
+          </div>
+          <div>
+            <Image
+              src={imgSrc}
+              alt="person_img"
+              className="w-[450px]  h-auto object-contain"
+            />
 
-      {/* Name text at bottom */}
-      <div
-        className={`text-start flex ${
-          imgSrc ? "justify-center" : "pl-6"
-        } w-full absolute lg:bottom-5 md:bottom-4 bottom-2
-        text-white lg:text-3xl md:text-xl text-sm max-[350px]:text-[10px] max-[350px]:leading-3
-        font-bold font-helios`}
-      >
-        {firstName}
-        <br />
-        {lastName}
+            <div className="pt-4 text-center font-extrabold">
+              <p>{number}</p>
+              <p>{email}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -57,19 +52,25 @@ function Cards() {
       <div className="flex flex-col gap-10 w-full">
         <Card
           imgSrc={mrRomany}
-          title={"ChairMan"}
+          title={"Chairman’s"}
           number={"+20122248233"}
-          desc={"Romany@silverlight-group.net"}
+          email={"Romany@silverlight-group.net"}
           firstName={"Romany"}
           lastName={"Ramzy Agaiby"}
+          desc="Since 1990, Silver Light Foods has been committed to providing premium Halal frozen meat and food products across Egypt.
+Our success is built on trust, quality, and long-term partnerships with leading global suppliers.
+We remain dedicated to excellence, sustainability, and food safety, ensuring Silver Light Foods continues to be a trusted name in Egypt’s frozen food industry."
         />
         <div className="flex lg:justify-end md:justify-end w-full">
           <Card
+            imgSrc={mrBeshoy}
+            className={"flex-row-reverse"}
             title={"CEO"}
             number={"+201270585858"}
-            desc={"Beshoy.agaiby@silverlight-group.net"}
-            firstName={"Beshoy"}
-            lastName={" Romany Ramzy "}
+            email={"Beshoy.agaiby@silverlight-group.net"}
+            desc="At Silver Light Foods, our vision is to lead Egypt’s frozen food industry through innovation, reliability, and quality.
+Building on over three decades of experience, we continue to strengthen our global partnerships and enhance our logistics network to ensure consistent supply, premium Halal products, and trusted service.
+Our commitment is simple — to deliver excellence from our sources to every table in Egypt, while driving growth and sustainability across the food sector."
           />
         </div>
       </div>

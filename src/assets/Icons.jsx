@@ -689,3 +689,16 @@ export const MailIcon = ({ className }) => (
     />
   </svg>
 );
+
+export const CircleIcon = ({ className }) => (
+  <svg
+    width="116"
+    height="116"
+    viewBox="0 0 116 116"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <circle cx="58" cy="58" r="58" fill="#22C3B7" />
+  </svg>
+);

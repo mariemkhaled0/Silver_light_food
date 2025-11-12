@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import underLine from "@/assets/images/underLine.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -39,7 +40,7 @@ export default function Hero() {
         </p>
       </div>
       <p className="text-center justify-start text-gray-600 lg:text-lg md:text-base text-[6px]  font-normal font-helios underline uppercase lg:leading-10  md:leading-10 leading-4 lg:tracking-[4px] tracking-[2px] ">
-        Explore Products
+        <Link href={"/products"}> Explore Products</Link>
       </p>
     </section>
   );

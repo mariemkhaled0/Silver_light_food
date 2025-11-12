@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -16,13 +17,15 @@ function Footer() {
       </p>
 
       <div className="flex flex-col items-center">
-        <button
-          className="bg-teal-400 hover:bg-teal-500 text-white font-helios  
+        <Link href={"/contact"}>
+          <button
+            className="bg-teal-400 hover:bg-teal-500 text-white font-helios  
       px-5 py-2 text-sm sm:px-6 sm:py-3 md:px-8 md:py-4 md:text-base 
       transition-all duration-200 cursor-pointer"
-        >
-          Contact Us
-        </button>
+          >
+            Contact Us
+          </button>
+        </Link>
       </div>
 
       {/* الحقوق */}
