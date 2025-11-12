@@ -31,12 +31,12 @@ export default function ProductsSection({
 }) {
   return (
     <section
-      className="w-full h-full bg-cover bg-center bg-no-repeat"
+      className="w-full h-full bg-cover bg-center bg-no-repeat  overflow-hidden"
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <Navbar className="absolute top-4" />
 
-      <div className="relative pt-40 pb-10 px-6 md:px-10 lg:px-20">
+      <div className="relative pt-40 pb-10 w-full  md:px-10 ">
         {/* Title + Product Image */}
         <div className="relative text-center">
           <p className={titleClassName}>
@@ -44,11 +44,12 @@ export default function ProductsSection({
             <br />
             {title.part2}
           </p>
-          <Image src={productImg} alt="product image" className={imgClassName} />
         </div>
 
+        <Image src={productImg} alt="product image" className={imgClassName} />
+
         {/* Content Section */}
-        <div className="flex flex-wrap items-center justify-between gap-6 lg:gap-0 pt-16 lg:pt-10">
+        <div className="flex flex-wrap items-center justify-between gap-6 lg:gap-0 pt-16 lg:pt-10 contanier">
           {/* Left Text */}
           <div>
             <h3 className="uppercase font-helios font-bold lg:text-6xl text-4xl">
@@ -84,7 +85,7 @@ export default function ProductsSection({
         </div>
 
         {/* Back Link */}
-        <div className="flex justify-center md:justify-center lg:justify-start items-end pt-6 md:pt-10 lg:pt-0 font-helios text-sm lg:text-base font-normal underline uppercase leading-10 tracking-[4px]">
+        <div className="flex contanier justify-center md:justify-center lg:justify-start items-end pt-6 md:pt-10 lg:pt-0 font-helios text-sm lg:text-base font-normal underline uppercase leading-10 tracking-[4px]">
           <Link href="/products" className="text-gray-600 hover:text-gray-800">
             Back to Products
           </Link>

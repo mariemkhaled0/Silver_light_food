@@ -8,10 +8,10 @@ function page() {
       <ProductsSection
         bgImg={seaFoodBg}
         imgClassName={
-          "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[350px] md:w-[250px] xxs:w-[100px] xs:[130px] w-[150px] h-auto"
+          "absolute lg:top-20  md:top-20 top-36 xl:-right-10 lg:-right-28 xl:top-36 md:-right-10 -right-10 lg:w-[400px] md:w-[300px] xxs:w-[150px] xs:[130px] w-[180px] h-auto"
         }
         titleClassName={
-          "text-black xl:text-[140px] lg:text-9xl md:text-8xl text-6xl xxs:text-4xl xs:text-5xl font-bold font-helios text-center uppercase"
+          "text-black xl:text-[220px]  lg:text-[180px] md:text-[150px] text-8xl  xxs:text-7xl font-bold font-helios xl:text-center lg:text-left text-left pl-6  uppercase"
         }
         title={{ part1: "Sea", part2: "food" }}
         productImg={seaFood}

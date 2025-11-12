@@ -7,10 +7,10 @@ function page() {
       <ProductsSection
         bgImg={chickenBg}
         imgClassName={
-          "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[350px] md:w-[250px] xxs:w-[100px] xs:[130px] w-[150px] h-auto"
+          " absolute top-36 -right-10 xxs:-right-4  xl:top-28  xl:-right-20 xl:w-[450px] lg:w-[400px] md:w-[250px] xxs:w-[100px] xs:[130px] w-[150px] h-auto"
         }
         titleClassName={
-          "text-black lg:text-9xl md:text-8xl text-6xl  xxs:text-4xl xs:text-5xl font-bold font-helios text-center uppercase"
+          "text-black lg:text-[150px] md:text-8xl text-6xl  xxs:text-4xl xs:text-5xl font-bold font-helios text-center uppercase"
         }
         title={{ part1: "Poultry", part2: "&chicken" }}
         productImg={Productschicken}
