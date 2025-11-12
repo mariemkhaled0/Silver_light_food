@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import mrRomany from "@/assets/images/mrRomany.png";
-import mrBeshoy from "@/assets/images/mrBeshoy.png";
+import mrBeshoy from "@/assets/images/personImg.png";
 
 import { CircleIcon } from "@/assets/Icons";
 
