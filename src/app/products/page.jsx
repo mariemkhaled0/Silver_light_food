@@ -35,7 +35,7 @@ function page() {
           </div>
 
           <div className="w-full h-full">
-            <div className="lg:px-5 xl:px-10 md:px-10 xl:gap-10 md:gap-2 lg:gap-5 flex justify-between w-full md:pt-10 pt-10 px-5 gap-10">
+            <div className="lg:px-5 xl:px-10 md:px-10 xl:gap-10 md:gap-2 lg:gap-5 flex justify-between xxs:flex-wrap w-full md:pt-10 pt-10 px-5 gap-10">
               <div className="max-w-[350px] lg:pt-10 space-y-5 text-black xl:text-lg lg:text-sm text-[9px] md:text-sm font-normal font-helios">
                 <p>
                   <strong>Since 1990</strong>, Silverlight Foods Group has been
@@ -89,7 +89,7 @@ function page() {
                       fill
                       className="object-cover object-center"
                     />
-                    <p className="absolute inset-0 flex text-center items-center justify-center text-white font-bold lg:text-3xl  md:text-2xl">
+                    <p className="absolute inset-0 flex text-center items-center justify-center text-white font-bold text-base lg:text-3xl  md:text-2xl">
                       {item.label.toUpperCase()}
                     </p>
                   </Link>

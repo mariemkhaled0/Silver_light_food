@@ -53,7 +53,7 @@ export default function GetInTouch() {
           <Card
             className={"bg-black text-white"}
             title={"Cairo – Head Office"}
-            phoneNumber={"+1012 3456 789"}
+            phoneNumber={"01003366312"}
             textColor={"text-white"}
             email={"demo@gmail.com"}
             location={"Obour Industrial Area, B & C Block 8, Cairo, Egypt"}
@@ -63,7 +63,7 @@ export default function GetInTouch() {
           <Card
             className={"border-2 border-black"}
             title={"Sharm El-Sheikh"}
-            phoneNumber={"+1012 3456 789"}
+            phoneNumber={"01003366312"}
             textColor={""}
             email={"demo@gmail.com"}
             location={"El Riwaisat Area, Sharm El-Sheikh, South Sinai, Egypt"}
@@ -75,7 +75,7 @@ export default function GetInTouch() {
               "border-r-2 border-b-2 lg:border-t-2 border-l-2 lg:border-l-0 md:border-l-0  border-black"
             }
             title={"Luxor"}
-            phoneNumber={"+1012 3456 789"}
+            phoneNumber={"01003366312"}
             textColor={""}
             email={"demo@gmail.com"}
             location={"Television Street, Block 18, Luxor, Egypt "}
