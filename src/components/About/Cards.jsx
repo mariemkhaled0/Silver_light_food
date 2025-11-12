@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import mrRomany from "@/assets/images/MrRomany.png";
-import mrBeshoy from "@/assets/images/MrBeshoy.png";
+import mrRomany from "@/assets/images/mrRomany.png";
+import mrBeshoy from "@/assets/images/mrBeshoy.png";
 import { CircleIcon } from "@/assets/Icons";
 
 const Card = ({ imgSrc, title, className, number, desc, email }) => {
