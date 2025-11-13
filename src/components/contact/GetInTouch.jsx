@@ -1,11 +1,13 @@
 import { LocationIcon, MailIcon, PhoneIcon } from "@/assets/Icons";
 import React from "react";
+import { ContactUs } from "../ContactUs/ContactUs";
 const Card = ({
   className,
   title,
   phoneNumber,
   textColor,
   email,
+  href,
   location,
 }) => {
   return (
@@ -22,7 +24,16 @@ const Card = ({
         </div>
         <div className="flex gap-4 items-center ">
           <LocationIcon className={`${textColor} w-6 h-6`} />
-          <p>{location}</p>
+          <p>
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" font-semibold hover:underline"
+            >
+              {location}
+            </a>
+          </p>
         </div>
       </div>
     </div>
@@ -57,12 +68,14 @@ export default function GetInTouch() {
             textColor={"text-white"}
             email={"demo@gmail.com"}
             location={"Obour Industrial Area, B & C Block 8, Cairo, Egypt"}
+            href="https://maps.app.goo.gl/rp4bNNqwZF7pUg8G8?g_st=ipc"
           />
         </div>
         <div>
           <Card
             className={"border-2 border-black"}
             title={"Sharm El-Sheikh"}
+            href="https://www.google.com/maps?q=El+Riwaisat+Area,+Sharm+El-Sheikh,+South+Sinai,+Egypt"
             phoneNumber={"01003366312"}
             textColor={""}
             email={"demo@gmail.com"}
@@ -79,7 +92,16 @@ export default function GetInTouch() {
             textColor={""}
             email={"demo@gmail.com"}
             location={"Television Street, Block 18, Luxor, Egypt "}
+            href="https://maps.app.goo.gl/xfJ2bzvRsB3zsjTU8?g_st=ipc"
           />
+        </div>
+      </div>
+      <div className="flex justify-center items-center">
+        <div>
+          <h3 className="font-mencken xl:text-8xl lg:text-7xl md:text-6xl text-3xl pb-14 pt-20">
+            Send us a message
+          </h3>
+          <ContactUs />
         </div>
       </div>
     </section>
